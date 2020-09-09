@@ -1,0 +1,81 @@
+
+ package il.co.ilrd.slinkedList
+ import il.co.ilrd.iterator
+
+
+class sList
+{ 
+	private Node begin;
+
+	//constructor
+	sList();
+
+    private class Node
+    { 
+    	Object obj;
+    	Node next;
+    	
+    	//constructor
+    	public Node(Object obj){}
+    	
+    	Object getData();
+    	
+    }
+    
+    public class sListIterator implements Iterator<>
+{
+	private Node current;
+    
+    //constructor
+    public sListIterator(Node first){}
+    
+
+	public boolean hasNext(){}
+
+	public Object Next(){};
+    
+}
+
+
+     
+	/* add a node before a specific place in the list  */
+	public void insert(sListIterator where, Object obj);
+		
+	/* remove a node in a specific place in the list, you can't remove from end */
+	public void remove(sListIterator where);
+
+	/* returns data */
+	Object getData(sListIterator where);
+
+	/* return the number of nodes in the list */
+	int count();
+
+	/* return an iterator the begin of the list */
+	sListIterator begin();
+
+	/* return an iterator the end of the list */
+	sListIterator end();
+
+	/* the function check if a given 2 iterators are equal */
+	int iterIsEqual(sListIterator it1, sListIterator it2);
+	
+	/* returns iterator to obj. If obj not found returns null */
+	sListIterator find(Object obj);
+	
+ }
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+
+
+
